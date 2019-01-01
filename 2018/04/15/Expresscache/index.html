@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Expresscache加速电脑方案 | Xratzh's Site</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/rss+xml" href="/rss2.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-102222977-4','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Expresscache加速电脑方案</h1><a id="logo" href="/.">Xratzh's Site</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/rss2.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Expresscache加速电脑方案</h1><div class="post-meta">Apr 15, 2018<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" data-disqus-identifier="2018/04/15/Expresscache/" href="/2018/04/15/Expresscache/#disqus_thread"></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原因："><span class="toc-number">1.</span> <span class="toc-text">原因：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作步骤："><span class="toc-number">2.</span> <span class="toc-text">操作步骤：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考："><span class="toc-number">3.</span> <span class="toc-text">参考：</span></a></li></ol></div></div><div class="post-content"><h2 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h2><p>很多的人都有一个疑惑，比如我有一个很小的固态硬盘，但是用作系统盘又实在是太小，想买个120G或者更大的固态，如今全部都是TLC的颗粒，素质也不是很好，好点的又很贵。如何物尽其用？那就是Expresscache，利用小的固态进行缓存加速方案的实施。</p>
+<p>主要原理，是依据电脑上通过安装Expresscache，进行缓存，用户在安装后进行操作，常用的操作都会被缓存到固态盘里面，读取的时候就会优先对固态进行读取，以此使用的是固态的速度。达到一个提速的效果。</p>
+<p>目前来看，总结了以下几个优劣的点供参考：</p>
+<p>优点：</p>
+<ul>
+<li>成本低，物尽其用</li>
+<li>速度提升相较于机械的盘很大，达到一般的固态水平</li>
+<li>最重要的一点，由于固态只是起到缓存读取的作用，所以，基本数据依然是放在机械盘的，不必担心固态损坏造成的数据无法找回，机械盘的备份优势和修复优势体现出来了</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>小固态一般速度都不是顶级，但也是很优秀的水平</li>
+<li>固态比较小，所以缓存的内容比较少，一般是16G-64G的水平，推荐用于开机，玩游戏和浏览器等常用操作（似乎也没其他什么操作了</li>
+</ul>
+<h2 id="操作步骤："><a href="#操作步骤：" class="headerlink" title="操作步骤："></a>操作步骤：</h2><p>如果你的笔记本在BIOS的Power选项里，支持Intel rapid start technology，那还可以通过固态起到快速开机的作用，一般的ThinkPad是有的，其他的没怎么见到。这个的话，暂时省略了。</p>
+<p>1、首先是插上固态，通过diskpart清除固态的分区以及数据，然后重新启动，安装Expresscache，安装过程中，软件会自动把固态未格式化的分区给格式化，然后开启加速。</p>
+<p>2、Expresscache下载地址 <a href="https://download.lenovo.com/pccbbs/mobiles/expresscache_x64_118.exe" target="_blank" rel="noopener">点我下载</a></p>
+<p>如果你想要安装Intel rapid start technology，就先给Intel rapid start technology提供一个不大于你的内存的分区，然后重启，再安装这个Intel rapid start technology，最后再安装Expresscache。</p>
+<h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><ul>
+<li><a href="http://think.lenovo.com.cn/htmls/knowledge/detail_20131128123732489.html" target="_blank" rel="noopener">快速安装Intel Rapid Start Technology和Expresscache软件</a></li>
+</ul>
+</div><div class="tags"><a href="/tags/折腾/">折腾</a><a href="/tags/四月/">四月</a></div><div class="post-nav"><a class="pre" href="/2018/06/03/GDPR/">GDPR你需要了解的</a><a class="next" href="/2018/01/20/icloudconvertion/">apple ID转区和icloud转区</a></div><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Homepage Leaderboard--><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7013007323748651"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});
+
+</script><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'xratzh';
+var disqus_identifier = '2018/04/15/Expresscache/';
+var disqus_title = 'Expresscache加速电脑方案';
+var disqus_url = 'https://xratzh.com/2018/04/15/Expresscache/';
+$('.btn_click_load').click(function() {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('.btn_click_load').css('display','none');
+});
+$.ajax({
+  url: 'https://disqus.com/next/config.json',
+  timeout: 3000,
+  type: 'GET',
+  success: (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    $('.btn_click_load').css('display','none');
+  })(),
+  error: function() {
+    $('.btn_click_load').css('display','block');
+  }
+});</script><script id="dsq-count-scr" src="//xratzh.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/经济学/" style="font-size: 15px;">经济学</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/折腾/" style="font-size: 15px;">折腾</a> <a href="/tags/一月/" style="font-size: 15px;">一月</a> <a href="/tags/七月/" style="font-size: 15px;">七月</a> <a href="/tags/六月/" style="font-size: 15px;">六月</a> <a href="/tags/八月/" style="font-size: 15px;">八月</a> <a href="/tags/五月/" style="font-size: 15px;">五月</a> <a href="/tags/四月/" style="font-size: 15px;">四月</a> <a href="/tags/博客/" style="font-size: 15px;">博客</a> <a href="/tags/十月/" style="font-size: 15px;">十月</a> <a href="/tags/十二月/" style="font-size: 15px;">十二月</a> <a href="/tags/路由器/" style="font-size: 15px;">路由器</a> <a href="/tags/十一月/" style="font-size: 15px;">十一月</a> <a href="/tags/九月/" style="font-size: 15px;">九月</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/10/18/NVME/">Intel老主板z67/77/87的BIOS加入NVME模块</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/18/Ubuntu18_tcp_powered_BBR/">Ubuntu18开启魔改BBR</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/03/GDPR/">GDPR你需要了解的</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/15/Expresscache/">Expresscache加速电脑方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/icloudconvertion/">apple ID转区和icloud转区</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/26/T430安装折腾macOS/">T430安装折腾macOS</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/27/优雅地满速下载百度云文件/">优雅地满速下载百度云文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/13/cloudcone/">cloudcone家KVM机器使用体验</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/bwg3/">CentOS一键魔改bbr加速搬瓦工shadowsocksr教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/07/namesilo域名购买/">namesilo域名购买</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//xratzh.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://stray.love/" title="天凉好个秋" target="_blank">天凉好个秋</a><ul></ul><a href="https://ezgolinux.org/" title="ezgolinux" target="_blank">ezgolinux</a><ul></ul><a href="https://coolshell.cn/" title="酷壳" target="_blank">酷壳</a><ul></ul><a href="https://github.com/xratzh/" title="GitHub" target="_blank">GitHub</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">Xratzh's Site.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-2" count="50" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

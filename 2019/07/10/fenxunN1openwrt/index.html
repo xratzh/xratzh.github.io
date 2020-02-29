@@ -2,8 +2,7 @@
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create','UA-102222977-4','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">斐讯N1刷机openwrt</h1><a id="logo" href="/.">Xratzh's Site</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/rss2.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">斐讯N1刷机openwrt</h1><div class="post-meta">Jul 10, 2019<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" data-disqus-identifier="2019/07/10/fenxunN1openwrt/" href="/2019/07/10/fenxunN1openwrt/#disqus_thread"></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div></div></div><div class="post-content"><p><strong>准备</strong></p>
-<ul>
+ga('create','UA-102222977-4','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">斐讯N1刷机openwrt</h1><a id="logo" href="/.">Xratzh's Site</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/rss2.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">斐讯N1刷机openwrt</h1><div class="post-meta">Jul 10, 2019<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" data-disqus-identifier="2019/07/10/fenxunN1openwrt/" href="/2019/07/10/fenxunN1openwrt/#disqus_thread"></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤一"><span class="toc-number">2.</span> <span class="toc-text">步骤一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤二"><span class="toc-number">3.</span> <span class="toc-text">步骤二</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤三"><span class="toc-number">4.</span> <span class="toc-text">步骤三</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤四"><span class="toc-number">5.</span> <span class="toc-text">步骤四</span></a></li></ol></div></div><div class="post-content"><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
 <li>斐讯N1一台</li>
 <li>开启DHCP的路由器一台（断网最好，防止固件自动升级</li>
 <li>优盘一个，大小至少是4G</li>
@@ -11,21 +10,19 @@ ga('create','UA-102222977-4','auto');ga('send','pageview');</script></head><body
 <li>网线2-3根  </li>
 <li>下载文末的文件，里面有本次刷机所需的文件</li>
 </ul>
-<p><strong>步骤一</strong><br>制作armbian启动优盘，利用写入工具（推荐balenaEtcher），写入文章末尾的链接里共享的文件中，armbian的镜像img。</p>
-<p><strong>步骤二</strong><br><em>降级N1的boot，使之能够从优盘启动写入优盘的系统。</em></p>
+<h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h2><p>制作armbian启动优盘，利用写入工具（推荐balenaEtcher），写入文章末尾的链接里共享的文件中，armbian的镜像img。</p>
+<h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h2><p><em>降级N1的boot，使之能够从优盘启动写入优盘的系统。</em></p>
 <ul>
 <li>这里先把N1，电脑网络链接到同一个路由器上。</li>
 <li>N1打开后，链接电视或者显示器，记下盒子的IP地址。在版本号处点击三下，会提示“打开adb”。我也看到有些人说不需要联系显示设备，盒子通电后，鼠标接在盒子上面，点击3次就可以打开。这个我没有测试 </li>
 <li>接下来，通过“斐讯T1、N1官方系统降级工具”，双击运行run.bat，按照模式操作，输入上一步记下来的IP地址，进行操作。结束后降级成功，设备重启</li>
 </ul>
-<p><strong>步骤三</strong></p>
-<ul>
+<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h2><ul>
 <li>打开CMD，在<code>斐讯T1、N1官方系统降级工具/onekey/data</code>目录下，按住shift，点击鼠标右键，打开powershell，运行<code>./adb connect 换成N1的IP:5555</code>，成功会提示<code>connected</code></li>
 <li>再次输入<code>./adb shell reboot update</code></li>
 <li>立即插入制作好的优盘到靠近中间的那个USB接口上</li>
 </ul>
-<p><strong>步骤四</strong></p>
-<ul>
+<h2 id="步骤四"><a href="#步骤四" class="headerlink" title="步骤四"></a>步骤四</h2><ul>
 <li>通过ssh软件（putty、xshell都行）连接N1盒子。如果连接失败，那就是N1的IP发生了变化，在路由器后台查看现在启动的N1是否是新的IP，连接这个IP重新尝试进入N1，或者通过鼠标键盘进入新的armbian系统，账号root，密码1234，其他的一路ctrl+c就行，输入ifconfig查看新的IP。</li>
 <li>进入后，执行以下脚本（固件里面自带）  </li>
 </ul>
@@ -35,7 +32,7 @@ ga('create','UA-102222977-4','auto');ga('send','pageview');</script></head><body
 <ul>
 <li>通过winscp或者filezilla，上传openwrt.img到系统默认的/root目录下，同时上传emmc.sh也到这个目录,这个脚本内容比较简单，就是把上传的openwrt.img覆盖进刚刚刷的，在emmc里面armbian分区。<br>执行完后，输入poweroff，拔掉优盘就可以了。下次系统有问题，直接插入这个优盘，启动时会自动优先从优盘启动armbian。</li>
 </ul>
-<p>百度网盘地址：<a href="https://pan.baidu.com/s/1OMAAhsQISeGnnVXbKLeZQQ" target="_blank" rel="noopener">点击这里</a>，提取码: uj2f<br>转载请注明出处：<a href="https://xratzh.com/2019/07/10/fenxunN1openwrt/">https://xratzh.com/2019/07/10/fenxunN1openwrt/</a></p>
+<p>百度网盘地址：<a href="https://pan.baidu.com/s/1OMAAhsQISeGnnVXbKLeZQQ" target="_blank" rel="noopener">点击这里</a>，提取码: uj2f<br>转载请注明出处：<a href="https://xratzh.com/2020/02/29/openwrt-ipv6/">https://xratzh.com/2020/02/29/openwrt-ipv6/</a></p>
 </div><div class="tags"><a href="/tags/折腾/">折腾</a><a href="/tags/七月/">七月</a></div><div class="post-nav"><a class="pre" href="/2020/02/29/openwrt-ipv6/">Openwrt路由器ipv6设置</a><a class="next" href="/2019/04/03/uefi/">老显卡支持uefi启动的BIOS制作</a></div><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- Homepage Leaderboard--><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7013007323748651"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});
 
 </script><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'xratzh';
